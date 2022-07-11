@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
 
 	// Zkopírovat všechny *.js soubory na stejné umístění do _site
 	// eleventyConfig.addPassthroughCopy("**/*.js");
-
+  eleventyConfig.addPassthroughCopy("admin");
 
   eleventyConfig.addFilter("limit", function (arr, limit) {
     return arr.slice(0, limit);
